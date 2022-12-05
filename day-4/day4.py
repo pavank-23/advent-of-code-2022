@@ -19,7 +19,7 @@ for i in fdata:
 count = 0
 
 for i in data:
-    if i[0].intersection(i[1]) == i[0] or i[0].intersection(i[1]) == i[1]:
+    if len(i[0].intersection(i[1])) != 0: 
         count += 1
 
 print(count)
